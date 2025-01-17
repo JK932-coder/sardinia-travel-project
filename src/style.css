@@ -1,12 +1,13 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f5c7f7;
 }
 
 header {
-  background-image: linear-gradient(rgba(73, 190, 183, 0.3), rgba(73, 190, 183, 0.9)), url("../src/pictures/cagliari.jpg");
+  background-image: linear-gradient(rgba(39, 44, 109, 0.6), rgba(39, 44, 109, 0.6)), url("../src/pictures/cagliari.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  color: white;
   background-color: white; 
   text-align: center;
   padding: 200px 0;
@@ -124,7 +125,7 @@ header a {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #f1f1f1;
+  background-color: #f5c7f7;
   padding: 16px 32px;
   gap: 10px;
   text-decoration: none;
@@ -219,7 +220,7 @@ section {
 footer {
   background-color: #49beb7;
   color: white;
-  background-image: linear-gradient(rgba(73, 190, 183, 0.9), rgba(73, 190, 183, 0.9)), url("../src/pictures/sardiniafooter.png");
+  background-image: linear-gradient(rgba(39, 44, 109, 0.8), rgba(39, 44, 109, 0.8)), url("../src/pictures/sardiniafooter.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
