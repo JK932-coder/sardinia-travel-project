@@ -36,14 +36,29 @@ header {
 .grid-3-column-new {
   grid-template-columns: 1fr 1fr 1fr;
 }
-.card {
-  background: white;
-  margin: 30px 0;
+
+.embed {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 /1;
 }
 
-.card-header img {
-  width: 100%; /* Ensure images take full width */
-  height: auto;
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0;
+  height: 300px; /* Set a fixed height for the card header */
+}
+
+.card-header img,
+.card-header iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image and iframe cover the entire area */
+}
+
+.card-header.grid {
+  grid-gap:0; 
 }
 
 .card-body {
@@ -171,13 +186,14 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
-
 }
+
 .cagliari {
-  max-width: 100%;
-  height: 461px;
+  width: 100%;
+  height: auto;
   display: block;
 }
+
 footer {
   background-color: #49beb7;
   color: white;
@@ -243,5 +259,12 @@ footer a {
   section {
     padding: 30px;
 
+  }
+  .card-header img {
+    display: none;
+  }
+
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
